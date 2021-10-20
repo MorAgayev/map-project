@@ -1,0 +1,11 @@
+body {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.img-astrological {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+

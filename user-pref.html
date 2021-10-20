@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>user-pref</title>
+</head>
+
+<body onload="onInit()">
+
+    <form onsubmit="onSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fullName" placeholder="First and last name" required />
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"/>
+        <label for="age">Age</label>
+        <input type="range" id="age" name="age" min="18" max="120">
+        <!-- onchange="showAge(this.value); -->
+        <!-- <span id="s-age">26</span> -->
+
+        <label for="b-date">Date of Birth:</label>
+        <input type="date" id="b-date" name="b-date"/>
+        <label for="t-birth">time of birth</label>
+        <input type="time" name="t-birth" id="t-birth">
+
+        <label for="bg-color">choose background color</label>
+        <input onchange="onChangeBgColor(this.value)" type="color" id="bg-color" name="bg-color" value="#aa0000" />
+        <label for="font-color">choose font color</label>
+        <input onchange="onChangeFontColor(this.value)" type="color" id="font-color" name="font-color" value="#aa0000" />
+        <input type="submit">
+    </form>
+    <button onclick="window.open('index.html')">back</button>
+
+    <script src="js/services/user-pref-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/controller/user-pref-controller.js"></script>
+</body>
+
+</html>

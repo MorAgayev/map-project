@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>welcome</title>
+</head>
+<body onload="onInit()">
+    <header>
+        <h1>welcome</h1>
+        <h3>find your way back to the bast places!</h3>
+    </header>
+    <main class="astrological">
+        <img class="img-astrological" src="img/astrological.png" alt="astrological">
+        <h2 class="header-astrological">astrological</h2>
+        <p class="main-content-astrological"></p>
+    </main>
+    <section>
+        <button onclick="window.open('map.html')">map</button>
+        <button onclick="window.open('user-pref.html')">pref</button>
+    </section>
+
+    <script src="js/controller/main-controller.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/place-service.js"></script>
+</body>
+</html>
